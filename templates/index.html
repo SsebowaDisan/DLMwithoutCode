@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+#dd {
+	font-family: 'CoreCircus', sans-serif;
+	text-transform: uppercase;
+	font-size: 2vw;
+	text-align: center;
+	line-height: 1;
+	margin: 0;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: $color1;
+	text-shadow: 1px 0px 0px red;
+		
+	&:before,
+	&:after {
+		content: attr(data-heading);
+		position: absolute;
+		overflow: hidden;
+		left: 0;
+		top: 0;
+	}
+	&:before {
+		color: $color3;
+		width: 100%;
+		z-index: 5;
+		font-family: 'CoreCircus2DIn';
+		font-weight: normal;
+	}
+	&:after {
+		z-index: -1;
+		text-shadow: 
+			
+			-3px 3px 2px #6c9d9e, 
+			-5px 5px 2px #6c9d9e,
+			-7px 7px 2px #6c9d9e,
+			-8px 8px 2px #6c9d9e,
+			-9px 9px 2px #6c9d9e,
+			-11px 11px 2px #6c9d9e;
+	}
+}
+</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel = "icon" href =  
+"https://image.flaticon.com/icons/png/512/2043/premium/2043014.png" 
+        type = "image/x-icon"> 
+<script src="https://kit.fontawesome.com/c5ffb49d8a.js" crossorigin="anonymous"></script>
+
+<title >DL-wi-co - Home</title>
+    
+<body>
+
+<div class="container-fluid">
+       
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/"> Deep-Learning-for-Developers</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/"><h2>Home</h2> <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="training" ><h2>Training</h2></a>
+                <a class="nav-item nav-link" href="predict" ><h2>Predict</h2></a>
+               
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    
+
+    <div class="jumbotron">
+        
+        <hr class="my-4">
+          <center><p id= "dd"> Train Your AI models in few Clicks</p></center>
+          <center><a class="btn btn-dark btn-lg" href="https://github.com/mustafamerttunali/Deep-Learning-Training-GUI" role="button" target="_blank"><i class="fab fa-github"> Github</i></a>
+         
+          
+          <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/mustafa-mert-tunali/" role="button" target="_blank"><i class="fab fa-linkedin"> Linkedin</i></a></center>
+          <hr>
+          <br>
+          <br>
+          <img src="{{url_for('static', filename='1.jpeg')}}"" class="img-fluid" alt="Responsive image" style="width: 50%; margin-left: 25%;">
+
+    </div>
+
+    
+
+  
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
