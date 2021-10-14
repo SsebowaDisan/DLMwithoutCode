@@ -3,7 +3,7 @@ import numpy as np
 from multiprocessing import Process
 import threading
 from flask import Flask, request, jsonify, render_template
-from dltgui.dlgui import dl_gui
+from DL.dlgui import dl_gui
 import tensorflow as tf
 app = Flask(__name__, static_folder="static/")
 @app.route('/')
